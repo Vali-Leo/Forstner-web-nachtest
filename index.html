@@ -76,3 +76,48 @@ const essen = ["Leberkäse", "Schnitzel", "Linzer Torte", "Österreich"];  //
     liste.appendChild(li);
   });
 </script>
+  <figure>
+        <img 
+            src="img/wahrzeichen.jpg" 
+            alt="Der Nordturm des Stephansdoms in Wien"
+            title="Vorgegebenes Bild"
+            width="450"
+        >
+
+        <figcaption>
+            Foto von 
+            <a href="https://commons.wikimedia.org/wiki/User:Bwag" target="_blank">
+                Bwag
+            </a>
+            —
+            <a href="https://commons.wikimedia.org/wiki/File:Stephansdom_Nordturm_01.JPG" target="_blank">
+                Stephansdom Nordturm 01.JPG
+            </a>
+            —
+            Lizenz:
+            <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank">
+                CC BY-SA 3.0
+            </a>
+        </figcaption>
+    </figure>
+
+    <!-- JavaScript -->
+    <script>
+        const speisen = [
+            "Wiener Schnitzel",
+            "Sachertorte",
+            "Apfelstrudel",
+            "Österreich"
+        ];
+
+        const liste = document.getElementById("liste-essen");
+
+        for (let i = 0; i < speisen.length; i++) {
+            let eintrag = document.createElement("li");
+            eintrag.textContent = speisen[i];
+            liste.appendChild(eintrag);
+        }
+    </script>
+
+</body>
+</html>
